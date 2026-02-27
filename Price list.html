@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prices - Shubiq Designs</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* GLOBAL STYLES */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #050505; /* Deep black theme */
+        color: #ffffff;
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* HEADER AREA */
+      .price-header {
+        padding: 80px 0 40px;
+        text-align: center;
+      }
+
+      .back-btn {
+        color: #6c63ff; /* Brand purple accent */
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+      }
+
+      .price-header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      .price-header p {
+        color: #adadad;
+        font-size: 18px;
+      }
+
+      /* PRICING GRID */
+      .pricing-grid-container {
+        padding-bottom: 100px;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .price-card {
+        background: #111111;
+        border: 1px solid #222;
+        padding: 40px;
+        border-radius: 24px;
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .price-card:hover {
+        border-color: #6c63ff;
+        transform: translateY(-10px);
+      }
+
+      .price-card.featured {
+        border: 1px solid #6c63ff;
+      }
+
+      .card-top {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .card-top i {
+        font-size: 40px;
+        color: #6c63ff;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      .card-top h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* PRICE LIST */
+      .price-list {
+        list-style: none;
+        margin-bottom: 40px;
+        flex-grow: 1;
+      }
+
+      .price-list li {
+        padding: 12px 0;
+        border-bottom: 1px solid #222;
+        display: flex;
+        justify-content: space-between;
+        color: #adadad;
+        font-size: 14px;
+      }
+
+      .price-list li span {
+        color: #6c63ff;
+        font-weight: 700;
+      }
+
+      /* BUTTON */
+      .price-btn {
+        background: #6c63ff;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .price-btn:hover {
+        background: #fff;
+        color: #6c63ff;
+      }
+
+      .price-footer {
+        text-align: center;
+        padding: 40px 0;
+        border-top: 1px solid #222;
+        color: #555;
+      }
+
+      @media (max-width: 768px) {
+        .price-header h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="price-header">
+      <div class="container">
+        <a href="index.html" class="back-btn"
+          ><i class="ri-arrow-left-line"></i> Back to Home</a
+        >
+        <h1>Pricing & Packages</h1>
+        <p>Premium digital solutions for modern brands.</p>
+      </div>
+    </header>
+
+    <section class="pricing-grid-container">
+      <div class="container">
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="card-top">
+              <i class="ri-video-chat-line"></i>
+              <h3>Video Production</h3>
+            </div>
+            <ul class="price-list">
+              <li>Short-form (Reels) <span>₹4000 - ₹6,000</span></li>
+              <li>YouTube Editing <span>₹3,000 - ₹5,000</span></li>
+              <li>Corporate/Marketing <span>₹10,000 - ₹12,000</span></li>
+              <li>
+                <strong>Wedding Cinema</strong> <span>₹15,000 - ₹25,000</span>
+              </li>
+              <li>Podcast (Premium) <span>₹10,000 - ₹18,000</span></li>
+            </ul>
+            <a href="contact.html" class="price-btn">Get Started</a>
+          </div>
+
+          <div class="price-card featured">
+            <div class="card-top">
+              <i class="ri-palette-line"></i>
+              <h3>Graphic Designing</h3>
+            </div>
+            <ul class="price-list">
+              <li>Logo (Elite Branding) <span>₹10,000 - ₹18,000</span></li>
+              <li>
+                Social Media (Premium) <span>₹15000 - ₹30,000 monthly</span>
+              </li>
+              <li>Brochure (Elite) <span>₹1,500 – ₹5,000</span></li>
+              <li>Presentation (Elite) <span>₹3,000 – ₹8,000</span></li>
+              <li>Photo Retouching (Elite) <span>₹600+ per Image</span></li>
+            </ul>
+            <a href="contact.html" class="price-btn">Hire Me</a>
+          </div>
+
+          <div class="price-card">
+            <div class="card-top">
+              <i class="ri-code-s-slash-line"></i>
+              <h3>Web & Digital</h3>
+            </div>
+            <ul class="price-list">
+              <li>Web Design (Custom) <span>₹30,000 - ₹50,000</span></li>
+              <li>Monthly SMM (Elite) <span>₹20,000 - ₹60,000</span></li>
+              <li>SEO (Premium) <span>₹30,000 - ₹60,000</span></li>
+              <li>E-Book (Elite) <span>₹5,000 - ₹12,000</span></li>
+            </ul>
+            <a href="contact.html" class="price-btn">Grow Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="price-footer">
+      <p>&copy; 2026 Shubiq Designs. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
